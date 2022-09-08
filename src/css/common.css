@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+
+.button {
+
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: lightcyan;
+  border-width: 1px;
+  border-color: lightgray;
+  width: 200px;
+  height: 200px;
+ margin: 0;
+ color: black;
+
+}
+.resetBtn{
+  width: 50%;
+  height: 50px;
+  background-color: lightskyblue;
+  border: 0;
+  border-radius: 6px;
+  margin: auto;
+  display: block;
+  color: white;
+  align-items: center;
+  margin-top: 20px;
+}
+.container{
+  margin: 60px 120px;
+
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.resetScoreBtn{
+  width: 50%;
+  height: 50px;
+  background-color: lightskyblue;
+  border: 0;
+  border-radius: 6px;
+  margin: auto;
+  display: block;
+  color: white;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.newOne{
+  padding: 20px 50px;
+}
+
+button{
+  height: 50px;
+  width: 70px;
+  font-size: large;
+}

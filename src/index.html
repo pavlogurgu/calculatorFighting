@@ -2,13 +2,180 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <title>Best Calc</title>
+    <link rel="stylesheet" href="css/common.css" />
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <!-- <div id="oldOne" >
+    <div class="buttons container visually-hidden">
+      <input type="number" id="num1" placeholder="Введіть перше число"/>
+      <input type="number" id="num2" placeholder="Введіть друге число"/>
+      
+      <div>
+        <button id="plus" onclick="op='+'">+</button>
+        <button id="minus" onclick="op='-'">-</button>
+        <button id="times" onclick="op='*'">x</button>
+        <button id="divide" onclick="op='/'">/</button>
+      </div>
+     -->
+  <!-- <form class="center">
+      <button type="button" class="numBtn1 button">1</button>
+      <button type="button" class="numBtn2 button">2</button>
+      <button type="button" class="numBtn3 button">3</button>
+    </form>
+    <form class="center">
+      <button type="button" class="numBtn4 button">4</button>
+      <button type="button" class="numBtn5 button">5</button>
+      <button type="button" class="numBtn6 button">6</button>
+    </form>
+    <form class="center">
+      <button type="button" class="numBtn7 button">7</button>
+      <button type="button" class="numBtn8 button">8</button>
+      <button type="button" class="numBtn9 button">9</button>
+    </form> -->
+    <!-- <button type="button" class="calcBtn">=</button>
+    
+    <p>Результат: <span id="result"></span></p>
+    <p id="firstP" class="visually-hidden">Ви також можете пройти опитування, після якого стане доступна повна версія сайту. Просто поставте галочку: <span><input id="checkboxOne" type="checkbox"></span>!</p>
+    
+    </div>
+  </div>
+  <div id="newOne" class="newOne">
+    <p>Як Вас звати?</p>
+    <input id="nameCheck" type="text" placeholder="Nigga">
+    <p>Скільки Вам років?</p>
+    <input id = "age" type="range" min="0" max="228" step="1" value="0"><span id ="ageSpan"></span>
+    <p>Які з перелічених дисциплін Ви б вибрали?</p>
+    <input type="radio" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> Баскетбол</label><br>
+    <input type="radio" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> Бокс</label><br>
+    <input type="radio" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> Пиво</label>
+    <p>Ваша орієнтація?</p>
+    <p><input id="orientationCheck" type="text" placeholder="Введіть Вашу сексуальну орієнтацію"></p>
+    <button id="orientationButton">Окей</button>
+    <p><b>Підсумок: </b><span id="summary"></span></p>
+    
+    <form id="lastCheck" class="visually-hidden">
+    <p>Який у Вас комп?</p>
+    <p>Мощний<span><input id="compCheck" type="range" min="0" max="1" step="1" value="0"></span>Такий, як у Іллі</p>
+    </form>
+  </div>
+  <div id="normalOne" class="visually-hidden">
+    <div class="buttons container">
+      <input type="number" id="num" placeholder="Введіть перше число"/>
+
+      <div>
+        <button id="plus" onclick="op='+'">+</button>
+        <button id="minus" onclick="op='-'">-</button>
+        <button id="times" onclick="op='*'">x</button>
+        <button id="divide" onclick="op='/'">/</button>
+        <button id="sqrt" onclick="op='*/'">&#8730</button>
+        <button id="double" onclick="op='**'">&#178</button>
+        <button id="factorial" onclick="op='!'">!</button>
+        <button id="randomStupin" onclick="op='**n'">X<sup><small>n</small></sup></button>
+        <button id="pi" onclick="op='pi'">&#960</button>
+
+        <button id="zero" onclick="op='0'">0</button>
+        <button id="one" onclick="op='1'">1</button>
+        <button id="two" onclick="op='2'">2</button>
+        <button id="three" onclick="op='3'">3</button>
+        <button id="four" onclick="op='4'">4</button>
+        <button id="five" onclick="op='5'">5</button>
+        <button id="six" onclick="op='6'">6</button>
+        <button id="seven" onclick="op='7'">7</button>
+        <button id="eight" onclick="op='8'">8</button>
+        <button id="nine" onclick="op='9'">9</button>
+
+        <button id="resetLast" onclick="op='C'">C</button>
+        <button id="resetAll" onclick="op='CA'">CA</button>
+      </div>
+      <button type="button" class="newCalcBtn">=</button>
+    
+      <p>Результат: <span id="result"></span></p>
+  </div> -->
+
+
+  <div class="calculator">
+
+ 
+
+
+    <input type="text" class="display">
+
+
+
+    <div class="keys">
+
+  
+
+      <div class="row">
+
+        <button value="7">7</button>
+
+        <button value="8">8</button>
+
+        <button value="9">9</button>
+
+        <button value="+" class="operator">+</button>
+
+      </div>
+
+      <div class="row">
+
+        <button value="4">4</button>
+
+        <button value="5">5</button>
+
+        <button value="6">6</button>
+
+        <button value="-" class="operator">-</button>
+
+      </div>
+
+      <div class="row">
+
+        <button value="1">1</button>
+
+        <button value="2">2</button>
+
+        <button value="3">3</button>
+
+        <button value="*" class="operator">*</button>
+
+      </div>
+
+      <div class="row">
+
+        <button value="C" class="operator">C</button>
+
+        <button value="0">0</button>
+
+        <button value="/" class="operator">/</button>
+
+        <button value="=" class="operator">=</button>
+
+      </div>
+      <div class="row">
+
+        <button value="**" class="operator">X<sup><small>n</small></sup></button>
+
+        <button value="sqrt">&#8730</button>
+
+        <button value="00" class="operator">00</button>
+
+        <button value="3.14159" class="operator">&#960</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+ 
+    <script src="js/index.js" type="module"></script>
   </body>
 </html>
