@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/common.css" />
   </head>
   <body>
-    <!-- <div id="oldOne" >
-    <div class="buttons container visually-hidden">
+    <div id="oldOne" >
+    <div class="buttons container">
       <input type="number" id="num1" placeholder="Введіть перше число"/>
       <input type="number" id="num2" placeholder="Введіть друге число"/>
       
@@ -19,23 +19,9 @@
         <button id="times" onclick="op='*'">x</button>
         <button id="divide" onclick="op='/'">/</button>
       </div>
-     -->
-  <!-- <form class="center">
-      <button type="button" class="numBtn1 button">1</button>
-      <button type="button" class="numBtn2 button">2</button>
-      <button type="button" class="numBtn3 button">3</button>
-    </form>
-    <form class="center">
-      <button type="button" class="numBtn4 button">4</button>
-      <button type="button" class="numBtn5 button">5</button>
-      <button type="button" class="numBtn6 button">6</button>
-    </form>
-    <form class="center">
-      <button type="button" class="numBtn7 button">7</button>
-      <button type="button" class="numBtn8 button">8</button>
-      <button type="button" class="numBtn9 button">9</button>
-    </form> -->
-    <!-- <button type="button" class="calcBtn">=</button>
+    
+ 
+    <button type="button" class="calcBtn">=</button>
     
     <p>Результат: <span id="result"></span></p>
     <p id="firstP" class="visually-hidden">Ви також можете пройти опитування, після якого стане доступна повна версія сайту. Просто поставте галочку: <span><input id="checkboxOne" type="checkbox"></span>!</p>
@@ -64,42 +50,10 @@
     <p>Мощний<span><input id="compCheck" type="range" min="0" max="1" step="1" value="0"></span>Такий, як у Іллі</p>
     </form>
   </div>
-  <div id="normalOne" class="visually-hidden">
-    <div class="buttons container">
-      <input type="number" id="num" placeholder="Введіть перше число"/>
-
-      <div>
-        <button id="plus" onclick="op='+'">+</button>
-        <button id="minus" onclick="op='-'">-</button>
-        <button id="times" onclick="op='*'">x</button>
-        <button id="divide" onclick="op='/'">/</button>
-        <button id="sqrt" onclick="op='*/'">&#8730</button>
-        <button id="double" onclick="op='**'">&#178</button>
-        <button id="factorial" onclick="op='!'">!</button>
-        <button id="randomStupin" onclick="op='**n'">X<sup><small>n</small></sup></button>
-        <button id="pi" onclick="op='pi'">&#960</button>
-
-        <button id="zero" onclick="op='0'">0</button>
-        <button id="one" onclick="op='1'">1</button>
-        <button id="two" onclick="op='2'">2</button>
-        <button id="three" onclick="op='3'">3</button>
-        <button id="four" onclick="op='4'">4</button>
-        <button id="five" onclick="op='5'">5</button>
-        <button id="six" onclick="op='6'">6</button>
-        <button id="seven" onclick="op='7'">7</button>
-        <button id="eight" onclick="op='8'">8</button>
-        <button id="nine" onclick="op='9'">9</button>
-
-        <button id="resetLast" onclick="op='C'">C</button>
-        <button id="resetAll" onclick="op='CA'">CA</button>
-      </div>
-      <button type="button" class="newCalcBtn">=</button>
-    
-      <p>Результат: <span id="result"></span></p>
-  </div> -->
 
 
-  <div class="calculator">
+
+  <div id="normalOne" class="calculator visually-hidden">
 
  
 
@@ -150,7 +104,7 @@
 
       <div class="row">
 
-        <button value="C" class="operator">C</button>
+        <button value="00" class="operator">00</button>
 
         <button value="0">0</button>
 
@@ -165,16 +119,26 @@
 
         <button value="sqrt">&#8730</button>
 
-        <button value="00" class="operator">00</button>
+        <button value="CA" class="operator">CA</button>
 
         <button value="3.14159" class="operator">&#960</button>
+
+      </div>
+      <div class="row">
+
+        <button value="(" class="operator">(</button>
+
+        <button value=")">)</button>
+        <button value="C">C</button>
+
+
 
       </div>
 
     </div>
 
   </div>
-
+<div id ="lagging" class="visually-hidden">Шось довго грузе. Лагає?)</div>
  
     <script src="./index.js" type="module"></script>
   </body>
