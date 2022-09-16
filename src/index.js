@@ -17,6 +17,7 @@ const summary = document.querySelector('#summary');
 const nameCheck = document.querySelector('#nameCheck');
 const lastCheck = document.querySelector('#lastCheck');
 const lagging = document.querySelector('#lagging');
+const body = document.querySelector('body');
 
 
 
@@ -57,18 +58,14 @@ function onCompCheck(){
 
 function makeItLag(){
   lagging.classList.remove("visually-hidden")
-  // setTimeout(function() {
-  //   Notiflix.Loading.circle()
-  //   document.getElementById("lagging").style.display = "none";
-    
-  // }, 10000);
-  // Notiflix.Loading.remove(5000);
   Notiflix.Loading.circle('Оооо... Комп не тягне? :-))', {
     backgroundColor: 'rgba(0,0,0)',
     });
     Notiflix.Loading.remove(10000)
     lagging.classList.add("visually-hidden");
   normalOne.classList.remove("visually-hidden");
+  body.classList.add("bodyColor");
+  
 }
 
 function calculation() {
